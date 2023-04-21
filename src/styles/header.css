@@ -1,4 +1,4 @@
-.header > div {
+.header>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,7 @@
     font-weight: 500;
     font-style: italic;
     letter-spacing: 6px;
-    
+
     padding: 10px;
 }
 
@@ -33,7 +33,7 @@
 
     cursor: pointer;
     transition: all 0.2s;
-    
+
     z-index: 1000;
 }
 
@@ -43,26 +43,28 @@
     height: 1px;
     margin: 0px;
     background-color: #e1e1e6;
-    
+
     transition: all 0.2s;
 }
 
-.burger:hover {
-    padding: 10px;
-}
+@media (min-width: 600px) {
+    .burger:hover {
+        padding: 10px;
+    }
 
-.burger:hover i:nth-of-type(1) {
-    height: 2px;
-}
+    .burger:hover i:nth-of-type(1) {
+        height: 2px;
+    }
 
-.burger:hover i:nth-of-type(2) {
-    width: 22px;
-    height: 2px;
-}
+    .burger:hover i:nth-of-type(2) {
+        width: 22px;
+        height: 2px;
+    }
 
-.burger:hover i:nth-of-type(3) {
-    width: 13px;
-    height: 2px;
+    .burger:hover i:nth-of-type(3) {
+        width: 13px;
+        height: 2px;
+    }
 }
 
 .burger-open i:nth-of-type(2) {
