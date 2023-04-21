@@ -1,0 +1,24 @@
+.footer {
+    border-top: 1px solid #373737;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer p {
+    padding-right: 10px;
+    color: #e1e1e6;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.footer p span {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .footer p {
+        font-size: 12px;
+    }
+}

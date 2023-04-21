@@ -1,0 +1,99 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.button-projetos-left {
+    left: 0;
+}
+
+.button-projetos-right {
+    right: 0;
+}
+
+@property --color-default {
+    syntax: '<color>';
+    initial-value: rgb(18, 18, 20);
+    inherits: false;
+}
+  
+@property --color-secondary {
+    syntax: '<color>';
+    initial-value: rgb(18, 18, 20);
+    inherits: false;
+}
+
+.button-projetos-left,
+.button-projetos-right {
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    padding: 0 9px;
+    background: linear-gradient(to left, var(--color-default) 0%, var(--color-secondary) 100%);
+    transition: --color-default 300ms, --color-secondary 300ms;
+    padding-bottom: 30px;
+}
+
+.button-projetos-left:hover {
+    --color-default: transparent;
+    --color-secondary: #69696959;
+}
+
+.button-projetos-right:hover {
+    --color-default: #69696959;
+    --color-secondary: transparent;
+}
+
+.button-projetos-left:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: aliceblue;
+
+    transform: rotate(-60deg);
+    margin-bottom: 13px;
+}
+
+.button-projetos-right:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: aliceblue;
+
+    transform: rotate(-60deg);
+}
+.button-projetos-right:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: aliceblue;
+
+    transform: rotate(60deg);
+    margin-bottom: 13px;
+}
+
+.button-projetos-left:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: aliceblue;
+
+    transform: rotate(60deg);
+}
+
+@media (max-width: 900px) {
+    .button-projetos-left,
+    .button-projetos-right {
+        display: none;
+    }
+}

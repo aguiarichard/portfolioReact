@@ -1,0 +1,28 @@
+.galeria-bloco {
+    max-width: 730px;
+    height: 530px;
+    overflow: hidden;
+    margin-top: 30px;
+    /* border-radius: 10px; */
+}
+
+.galeria {
+    display: flex;
+    transition: transform 1s;
+    position: relative;
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .galeria-bloco {
+        height: initial;
+        overflow: initial;
+    }
+
+    .galeria {
+        flex-direction: column;
+        gap: 60px;
+
+        margin-bottom: 60px;
+    }
+}
