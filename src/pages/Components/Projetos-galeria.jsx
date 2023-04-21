@@ -2,6 +2,8 @@ import React from "react";
 
 import GaleriaItem from "./Projetos-galeria-item";
 import imgFlappyBird from "../../assets/imgs/flappy.png"
+import imgPixelArt from "../../assets/imgs/pixel-art.png"
+import imgCalculadora from "../../assets/imgs/calculadora.png"
 
 import "../../styles/projetos-galeria.css"
 
@@ -20,7 +22,7 @@ export default function ProjetosGaleria() {
         <GaleriaItem
           href="https://pixel-art-js.netlify.app/"
           hrefGitHub="https://github.com/aguiarichard/pixelArtJs"
-          src="src/assets/imgs/pixel-art.png"
+          src={imgPixelArt}
           alt="Projeto Pixel Art"
           tecnologias="HTML CSS Javascript"
           link="Pixel Art"
@@ -28,7 +30,7 @@ export default function ProjetosGaleria() {
         <GaleriaItem
           href="https://calculadora-js-aguiar.netlify.app/"
           hrefGitHub="https://github.com/aguiarichard/calculadoraJs"
-          src="src/assets/imgs/calculadora.png"
+          src={imgCalculadora}
           alt="Projeto Calculadora JS"
           tecnologias="HTML CSS Javascript"
           link="Calculadora JS"
