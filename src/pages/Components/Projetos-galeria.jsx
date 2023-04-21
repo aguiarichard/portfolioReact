@@ -11,7 +11,7 @@ export default function ProjetosGaleria() {
         <GaleriaItem
           href="https://flappy-bird-aguiar-js.netlify.app/"
           hrefGitHub="https://github.com/aguiarichard/flappyBirdJs"
-          src="../../assets/imgs/flappy.png"
+          src="../../../../src/assets/imgs/flappy.png"
           alt="Projeto Flappy Bird"
           tecnologias="HTML CSS Javascript"
           link="Flappy Bird"
