@@ -1,6 +1,7 @@
 import React from "react";
 
 import GaleriaItem from "./Projetos-galeria-item";
+import imgFlappyBird from "../../assets/imgs/flappy.png"
 
 import "../../styles/projetos-galeria.css"
 
@@ -11,7 +12,7 @@ export default function ProjetosGaleria() {
         <GaleriaItem
           href="https://flappy-bird-aguiar-js.netlify.app/"
           hrefGitHub="https://github.com/aguiarichard/flappyBirdJs"
-          src="../../../../src/assets/imgs/flappy.png"
+          src={imgFlappyBird}
           alt="Projeto Flappy Bird"
           tecnologias="HTML CSS Javascript"
           link="Flappy Bird"
