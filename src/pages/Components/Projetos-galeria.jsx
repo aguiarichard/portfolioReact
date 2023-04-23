@@ -12,12 +12,12 @@ export default function ProjetosGaleria() {
     <div className="galeria-bloco">
       <div className="galeria" id="galeria">
         <GaleriaItem
-          href="https://flappy-bird-aguiar-js.netlify.app/"
-          hrefGitHub="https://github.com/aguiarichard/flappyBirdJs"
+          href="https://flappy-cat-aguiar-js.netlify.app/"
+          hrefGitHub="https://github.com/aguiarichard/flappyCatJs"
           src={imgFlappyBird}
-          alt="Projeto Flappy Bird"
+          alt="Projeto Flappy Cat"
           tecnologias="HTML CSS Javascript"
-          link="Flappy Bird"
+          link="Flappy Cat"
         />
         <GaleriaItem
           href="https://pixel-art-js.netlify.app/"
