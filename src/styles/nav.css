@@ -7,7 +7,8 @@
     top: 0;
     justify-content: center;
     align-items: center;
-    background-color: #202024;
+    /* background-color: #202024; */
+    background-color: #2a2a2a;
     transform: translateY(-900px);
     transition: all 1s ease;
     z-index: 100;
@@ -23,7 +24,8 @@
     margin: 20px 0;
     letter-spacing: 20px;
     font-weight: bold;
-    background-color: #222226;
+    /* background-color: #222226; */
+    background-color: #2f2f2f;
     height: 90px;
     transition: all 0.1s;
 }
