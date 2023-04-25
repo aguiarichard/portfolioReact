@@ -9,25 +9,14 @@ import "../../styles/projetos-galeria-item.css"
 export default function GaleriaItem(props) {
   const arrayTecnologias = props.tecnologias.split(' ')
 
-  function mostrarDescricao() {
-    const vidros = document.querySelectorAll('.vidro-tecnologias')
-    const projetosNodeList = document.querySelectorAll('#projeto')
-    const projetos = [ ...projetosNodeList ]
-    
-    const projetoAtual = { index: 0 }
-    projetos.forEach((projeto, index) => {
-      if (projeto.classList.contains('projeto-atual')) {
-        projetoAtual.index = index
-      }
-    })
+  function mostrarDescricao(e) {
+    const vidroAtual = e.target.offsetParent
 
     const areaTotal = document.querySelector('.container')
     const altura = areaTotal.clientHeight
     const largura = areaTotal.clientWidth
 
     const isMobile = altura > largura
-
-    const vidroAtual = vidros[projetoAtual.index]
 
     if (vidroAtual.style.transform === 'translateY(0px)') {
 
@@ -36,7 +25,7 @@ export default function GaleriaItem(props) {
       } else {
         vidroAtual.style.transform = 'translateY(calc(100% - 80px))'
       }
-      
+
       vidroAtual.style.backgroundColor = 'rgb(87 87 87 / 80%)'
       vidroAtual.classList.toggle('blur')
 
@@ -61,7 +50,7 @@ export default function GaleriaItem(props) {
               })
             }
 
-            <button className="botao-descricao" onClick={mostrarDescricao}>
+            <button className="botao-descricao" onClick={(e) => mostrarDescricao(e)}>
               Mostrar Descrição
             </button>
           </div>
