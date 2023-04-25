@@ -142,6 +142,10 @@
     .vidro-tecnologias { 
         transform: translateY(calc(100% - 50px));
     }
+
+    .descricao {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 600px) {
