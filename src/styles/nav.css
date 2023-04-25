@@ -32,7 +32,9 @@
     transition: all 0.1s;
 }
 
-.nav a:hover {
-    font-size: 34px;
-    letter-spacing: 25px;
+@media (min-width: 600px) {
+    .nav a:hover {
+        font-size: 34px;
+        letter-spacing: 25px;
+    }
 }
