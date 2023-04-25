@@ -1,8 +1,8 @@
 .galeria-bloco {
     max-width: 730px;
-    height: 530px;
+    /* height: 530px; */
     overflow: hidden;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     /* border-radius: 10px; */
 }
 
@@ -21,8 +21,8 @@
 
     .galeria {
         flex-direction: column;
-        gap: 60px;
+        gap: 10px;
 
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 }

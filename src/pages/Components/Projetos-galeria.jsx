@@ -18,6 +18,7 @@ export default function ProjetosGaleria() {
           alt="Projeto Flappy Cat"
           tecnologias="HTML CSS Javascript"
           link="Flappy Cat"
+          descricao="Projeto feito utilizando HTML, CSS e JS. Implementando orientação á objetos com Javascript."
         />
         <GaleriaItem
           href="https://pixel-art-js.netlify.app/"
@@ -26,6 +27,8 @@ export default function ProjetosGaleria() {
           alt="Projeto Pixel Art"
           tecnologias="HTML CSS Javascript"
           link="Pixel Art"
+          descricao="Um dos primeiros projetos que desenvolvi sozinho, desde a parte do layout, até o desenvolvimento.
+            Feito com HTML, CSS e Javascript puro"
         />
         <GaleriaItem
           href="https://calculadora-js-aguiar.netlify.app/"
@@ -34,6 +37,7 @@ export default function ProjetosGaleria() {
           alt="Projeto Calculadora JS"
           tecnologias="HTML CSS Javascript"
           link="Calculadora JS"
+          descricao="Calculadora inspirada no modelo IOS, feita com JS e com todas as funcionalidades da original."
         />
       </div>
     </div>

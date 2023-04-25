@@ -43,6 +43,17 @@ export default class Projetos extends Component {
       this.setState({ projetoAtual: quantidadeProjetos - 1 })
     }
 
+
+    const projetos = [...quantidadeProjetosNodeList]
+
+    projetos.forEach(projeto => {
+      projeto.classList.remove('projeto-atual')
+    })
+
+    // marcando projeto atual para mostrar descrição com mais facilidade no projeto-galeria-item.jsx
+    projetos[projetoAtual].classList.add('projeto-atual')
+
+    quantidadeProjetosNodeList[projetoAtual].classList
     galeria.style.transform = `translateX(-${(projetoAtual) * 750}px)`
   }
 
