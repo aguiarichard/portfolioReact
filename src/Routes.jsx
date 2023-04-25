@@ -9,9 +9,9 @@ export default function RoutesReact() {
     return (
         <Routes>
             <Route path="*" element={<Projetos />} /> 
-            <Route path="/" element={<Projetos />} /> 
-            <Route path="/" element={<Sobre />} /> 
-            <Route path="/" element={<Contatos />} /> 
+            <Route path="/projetos" element={<Projetos />} /> 
+            <Route path="/sobre" element={<Sobre />} /> 
+            <Route path="/contatos" element={<Contatos />} /> 
         </Routes>
     )
 }
