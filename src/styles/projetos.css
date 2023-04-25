@@ -17,13 +17,13 @@
 
 @property --color-default {
     syntax: '<color>';
-    initial-value: rgb(18, 18, 20);
+    initial-value: rgb(42, 42, 42);
     inherits: false;
 }
   
 @property --color-secondary {
     syntax: '<color>';
-    initial-value: rgb(18, 18, 20);
+    initial-value: rgb(42, 42, 42);
     inherits: false;
 }
 
@@ -35,7 +35,7 @@
     cursor: pointer;
     border: none;
     padding: 0 9px;
-    background: linear-gradient(to left, var(--color-default) 0%, var(--color-secondary) 100%);
+    background: linear-gradient(to left, var(--color-default) 0%, var(--color-default) 100%);
     transition: --color-default 300ms, --color-secondary 300ms;
     padding-bottom: 30px;
 }
