@@ -12,6 +12,8 @@
     transform: translateY(-900px);
     transition: all 1s ease;
     z-index: 100;
+
+    touch-action: none;
 }
 
 .nav a {
