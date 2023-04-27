@@ -56,67 +56,94 @@
 }
 
 .botao-descricao {
-    color: #fff;
     border: none;
-    background: #fff;    
+    background: #b3a2ff;
     margin: 0 10px;
     cursor: pointer;
     position: absolute;
-    top: -5px;
+    top: -10px;
     right: 15px;
     transition: all 300ms;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 7px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.separator {
+    width: 10px;
+    height: 1px;
+    background-color: #ffffff;
+    transform: rotate(90deg) translateY(-2px);
+}
+
+.botao-descricao p {
+    color: #ffffff;
+    pointer-events: none;
+}
+
+.flechas-descricao {
     width: 19px;
     height: 13px;
+    position: relative;
+
+    pointer-events: none;
 }
 
-.botao-descricao::before {
+.flechas-descricao::before {
     content: "";
     position: absolute;
     height: 2px;
-    background: #373737;
+    background: #ffffff;
     width: 7px;
-    transform: translateX(-8px) translateY(5px) rotate(-40deg);
+    transform: translateX(-8px) translateY(6px) rotate(-40deg);
     right: 0;
     top: 0;
+
+    pointer-events: none;
 }
 
-.botao-descricao::after {
+.flechas-descricao::after {
     content: "";
     position: absolute;
     height: 2px;
-    background: #373737;
+    background: #ffffff;
     width: 7px;
-    transform: translateX(-4px) translateY(5px) rotate(40deg);
+    transform: translateX(-3px) translateY(6px) rotate(40deg);
     right: 0;
     top: 0;
+    pointer-events: none;
 }
 
-.botao-descricao-open::before {
+.flechas-descricao-open::before {
     content: "";
     position: absolute;
     height: 2px;
-    background: #373737;
+    background: #ffffff;
     width: 7px;
-    transform: translateX(-8px) translateY(5px) rotate(40deg);
-    right: 0;
-    top: 0;
+    transform: translateX(-6px) translateY(6px) rotate(40deg);
+
+    pointer-events: none;
 }
 
-.botao-descricao-open::after {
+.flechas-descricao-open::after {
     content: "";
     position: absolute;
     height: 2px;
-    background: #373737;
+    background: #ffffff;
     width: 7px;
-    transform: translateX(-4px) translateY(5px) rotate(-40deg);
-    right: 0;
-    top: 0;
+    transform: translateX(-2px) translateY(6px) rotate(-40deg);
+
+    pointer-events: none;
 }
 
 .container-tecnologias-utilizadas {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-bottom: solid 1px #0000001a;
     height: 80px;
@@ -185,6 +212,10 @@
 
     .descricao {
         margin-top: 10px;
+    }
+
+    .botao-descricao {
+        font-size: 10px;
     }
 }
 

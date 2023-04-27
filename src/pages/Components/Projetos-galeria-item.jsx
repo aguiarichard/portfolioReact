@@ -11,6 +11,7 @@ export default function GaleriaItem(props) {
 
   function mostrarDescricao(e) {
     const vidroAtual = e.target.offsetParent
+    const flechas = e.target.children[2]
     const button = e.target
 
     const areaTotal = document.querySelector('.container')
@@ -19,7 +20,7 @@ export default function GaleriaItem(props) {
 
     const isMobile = altura > largura
 
-    button.classList.toggle('botao-descricao-open')
+    flechas.classList.toggle('flechas-descricao-open')
 
     if (vidroAtual.style.transform === 'translateY(0px)') {
 
@@ -31,7 +32,7 @@ export default function GaleriaItem(props) {
 
       vidroAtual.style.backgroundColor = 'rgb(87 87 87 / 80%)'
       vidroAtual.classList.toggle('blur')
-      button.style.top = '-5px'
+      button.style.top = '-10px'
 
       return
     }
@@ -54,7 +55,11 @@ export default function GaleriaItem(props) {
               })
             }
 
-            <button className="botao-descricao" onClick={(e) => mostrarDescricao(e)}></button>
+            <button className="botao-descricao" onClick={(e) => mostrarDescricao(e)}>
+              <p>Descrição</p>
+              <i className="separator"></i>
+              <div className="flechas-descricao"></div>
+            </button>
           </div>
           <div className="sobre-projeto">
             <p className="descricao">
