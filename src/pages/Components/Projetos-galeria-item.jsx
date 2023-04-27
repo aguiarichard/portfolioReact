@@ -19,6 +19,8 @@ export default function GaleriaItem(props) {
 
     const isMobile = altura > largura
 
+    button.classList.toggle('botao-descricao-open')
+
     if (vidroAtual.style.transform === 'translateY(0px)') {
 
       if (isMobile) {
@@ -29,7 +31,7 @@ export default function GaleriaItem(props) {
 
       vidroAtual.style.backgroundColor = 'rgb(87 87 87 / 80%)'
       vidroAtual.classList.toggle('blur')
-      button.style.top = '-10px'
+      button.style.top = '-5px'
 
       return
     }
@@ -39,7 +41,6 @@ export default function GaleriaItem(props) {
     button.style.top = '0'
 
     vidroAtual.classList.toggle('blur')
-
   }
 
   return (
@@ -53,9 +54,7 @@ export default function GaleriaItem(props) {
               })
             }
 
-            <button className="botao-descricao" onClick={(e) => mostrarDescricao(e)}>
-              Mostrar Descrição
-            </button>
+            <button className="botao-descricao" onClick={(e) => mostrarDescricao(e)}></button>
           </div>
           <div className="sobre-projeto">
             <p className="descricao">
