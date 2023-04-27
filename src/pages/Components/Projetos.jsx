@@ -63,8 +63,8 @@ export default class Projetos extends Component {
         </div>
 
         <div className="container-redes-sociais">
-          <RedesSociais href="https://www.linkedin.com/in/aguiarichard/" srcImg={ImgLinkedin} alt="Linkedin"/>
-          <RedesSociais href="https://github.com/aguiarichard" srcImg={ImgGitHub} alt="Github"/>
+          <RedesSociais href="https://www.linkedin.com/in/aguiarichard/" srcImg={ImgLinkedin} alt="Linkedin" backgroundImg="#ffffff"/>
+          <RedesSociais href="https://github.com/aguiarichard" srcImg={ImgGitHub} alt="Github" backgroundImg="#d7d7d7"/>
         </div>
       </main>
     )
