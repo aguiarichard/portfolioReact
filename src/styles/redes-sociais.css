@@ -1,3 +1,10 @@
 .img-redes-sociais {
     width: 40px;
+    border-radius: 4px;
+}
+
+.link-redes-socias {
+    display: flex;
+    border-radius: 6px;
+    background: #ffffff;
 }

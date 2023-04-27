@@ -4,7 +4,7 @@ import "../../styles/redes-sociais.css"
 
 export default function RedesSociais(props) {
   return (
-    <a href={props.href} target="_blank">
+    <a href={props.href} target="_blank" className="link-redes-socias">
       <img src={props.srcImg} alt={props.alt} className="img-redes-sociais"/>
     </a>
   )
