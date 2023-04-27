@@ -11,6 +11,7 @@ export default function GaleriaItem(props) {
 
   function mostrarDescricao(e) {
     const vidroAtual = e.target.offsetParent
+    const button = e.target
 
     const areaTotal = document.querySelector('.container')
     const altura = areaTotal.clientHeight
@@ -28,12 +29,14 @@ export default function GaleriaItem(props) {
 
       vidroAtual.style.backgroundColor = 'rgb(87 87 87 / 80%)'
       vidroAtual.classList.toggle('blur')
+      button.style.top = '-10px'
 
       return
     }
     
     vidroAtual.style.backgroundColor = 'rgb(23 23 23 / 79%)'
     vidroAtual.style.transform = 'translateY(0px)'
+    button.style.top = '0'
 
     vidroAtual.classList.toggle('blur')
 
