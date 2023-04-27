@@ -16,7 +16,7 @@
     font-size: 18px;
     font-weight: 500;
     font-style: italic;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
 
     padding: 10px;
 }
@@ -104,5 +104,9 @@
 @media (max-width: 600px) {
     .header div p {
         font-size: 14px;
+    }
+
+    .header div p {
+        letter-spacing: 3px;
     }
 }
