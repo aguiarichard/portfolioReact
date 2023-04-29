@@ -91,18 +91,6 @@
     transform: rotate(60deg);
 }
 
-.container-redes-sociais {
-    position: fixed;
-    bottom: 30px;
-    left: 5px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    z-index: 60;
-}
-
 @media (max-width: 820px) {
     .button-projetos-left,
     .button-projetos-right {

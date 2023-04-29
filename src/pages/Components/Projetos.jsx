@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import '../../styles/projetos.css'
 
 import ProjetosGaleria from "./Projetos-galeria";
-import RedesSociais from "./Redes-sociais";
-
-import ImgLinkedin from "../../assets/imgs/linkedin.png"
-import ImgGitHub from "../../assets/imgs/github.png"
 
 const initialState = {
   projetoAtual: 0
@@ -60,11 +56,6 @@ export default class Projetos extends Component {
           
           <button className="button-projetos-left" onClick={e => this.andarCarrocel(e)}></button>
           <button className="button-projetos-right" onClick={e => this.andarCarrocel(e)}></button>
-        </div>
-
-        <div className="container-redes-sociais">
-          <RedesSociais href="https://www.linkedin.com/in/aguiarichard/" srcImg={ImgLinkedin} alt="Linkedin" backgroundImg="#ffffff"/>
-          <RedesSociais href="https://github.com/aguiarichard" srcImg={ImgGitHub} alt="Github" backgroundImg="#d7d7d7"/>
         </div>
       </main>
     )
