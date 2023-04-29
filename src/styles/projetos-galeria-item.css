@@ -35,8 +35,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    transform: translateY(calc(100% - 80px));
     transition-duration: 300ms;
+
+    transform: translateY(0);
+}
+
+.vidro-tecnologias-closed {
+    transform: translateY(calc(100% - 80px));
 }
 
 .sobre-projeto {
@@ -206,7 +211,7 @@
         padding: 2px 10px;
     }
 
-    .vidro-tecnologias {
+    .vidro-tecnologias-closed {
         transform: translateY(calc(100% - 50px));
     }
 

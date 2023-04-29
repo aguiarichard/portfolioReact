@@ -14,40 +14,31 @@ export default function GaleriaItem(props) {
     const flechas = e.target.children[2]
     const button = e.target
 
-    const areaTotal = document.querySelector('.container')
-    const altura = areaTotal.clientHeight
-    const largura = areaTotal.clientWidth
-
-    const isMobile = altura > largura
-
     flechas.classList.toggle('flechas-descricao-open')
 
-    if (vidroAtual.style.transform === 'translateY(0px)') {
+    if (vidroAtual.classList.contains('vidro-tecnologias-closed')) {
 
-      if (isMobile) {
-        vidroAtual.style.transform = 'translateY(calc(100% - 50px))'
-      } else {
-        vidroAtual.style.transform = 'translateY(calc(100% - 80px))'
-      }
 
-      vidroAtual.style.backgroundColor = 'rgb(87 87 87 / 80%)'
+      vidroAtual.style.backgroundColor = 'rgb(23 23 23 / 79%)'
+      vidroAtual.classList.remove('vidro-tecnologias-closed')
+      button.style.top = '0'
+  
       vidroAtual.classList.toggle('blur')
-      button.style.top = '-10px'
 
       return
     }
     
-    vidroAtual.style.backgroundColor = 'rgb(23 23 23 / 79%)'
-    vidroAtual.style.transform = 'translateY(0px)'
-    button.style.top = '0'
+    vidroAtual.classList.add('vidro-tecnologias-closed')
 
+    vidroAtual.style.backgroundColor = 'rgb(87 87 87 / 80%)'
     vidroAtual.classList.toggle('blur')
+    button.style.top = '-10px'
   }
 
   return (
     <div className="projeto">
       <div className="container-projeto">
-        <div className="vidro-tecnologias">
+        <div className="vidro-tecnologias vidro-tecnologias-closed">
           <div className="container-tecnologias-utilizadas">
             {
               arrayTecnologias.map(tecnologia => {
