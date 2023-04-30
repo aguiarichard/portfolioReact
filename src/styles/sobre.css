@@ -1,0 +1,23 @@
+.container-sobre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.apresentacao {
+    font-size: 22px;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.small {
+    font-size: 16px;
+}
+
+.richard {
+    color: #b3a2ff;
+}

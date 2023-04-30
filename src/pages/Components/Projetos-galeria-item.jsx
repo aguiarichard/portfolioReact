@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons"
 
+import Button from "./Button";
+
 import "../../styles/projetos-galeria-item.css"
 
 export default function GaleriaItem(props) {
@@ -14,7 +16,7 @@ export default function GaleriaItem(props) {
     const flechas = e.target.children[2]
     const button = e.target
 
-    flechas.classList.toggle('flechas-descricao-open')
+    flechas.classList.toggle('flechas-open')
 
     if (vidroAtual.classList.contains('vidro-tecnologias-closed')) {
 
@@ -46,11 +48,7 @@ export default function GaleriaItem(props) {
               })
             }
 
-            <button className="botao-descricao" onClick={(e) => mostrarDescricao(e)}>
-              <p>Descrição</p>
-              <i className="separator"></i>
-              <div className="flechas-descricao"></div>
-            </button>
+            <Button nomeBotao="descrição" onClick={(e) => mostrarDescricao(e)}/>
           </div>
           <div className="sobre-projeto">
             <p className="descricao">
