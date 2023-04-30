@@ -8,9 +8,9 @@ import Contatos from './pages/Components/Contatos'
 export default function RoutesReact() {
     return (
         <Routes>
-            <Route path="*" element={<Projetos />} /> 
-            <Route path="/projetos" element={<Projetos />} /> 
+            <Route path="*" element={<Sobre />} /> 
             <Route path="/sobre" element={<Sobre />} /> 
+            <Route path="/projetos" element={<Projetos />} /> 
             <Route path="/contatos" element={<Contatos />} /> 
         </Routes>
     )
