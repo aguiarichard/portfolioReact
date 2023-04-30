@@ -2,22 +2,43 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 10px;
-
-    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .apresentacao {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
-    padding: 15px;
+    padding: 0 15px;
     color: #fff;
 }
 
-.small {
-    font-size: 16px;
+.bold {
+    font-weight: 500;
 }
+
+.small {
+    font-size: 14px;
+}
+
+.small::after {
+    content: "|";
+    margin-left: 8px;
+    opacity: 1;
+    animation: anima 1s cubic-bezier(0.68, -0.39, 0.58, 1) infinite;
+    color: #b3a2ff;
+}
+
+@keyframes anima{
+    from {opacity: 0%}
+    to {opacity: 100%}
+ }
 
 .richard {
     color: #b3a2ff;
+}
+
+.front-end {
+    font-weight: bold;
 }

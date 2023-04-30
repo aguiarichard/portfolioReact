@@ -48,7 +48,7 @@ export default function GaleriaItem(props) {
               })
             }
 
-            <Button nomeBotao="descrição" onClick={(e) => mostrarDescricao(e)}/>
+            <Button classe="botao-projetos" nomeBotao="descrição" onClick={(e) => mostrarDescricao(e)}/>
           </div>
           <div className="sobre-projeto">
             <p className="descricao">

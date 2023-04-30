@@ -4,10 +4,13 @@ import "../../styles/button.css"
 
 export default function Button(props) {
   return (
-    <button className="botao" onClick={props.onClick}>
+    <button 
+      className={`botao ${props.classe ? props.classe : ''}`}
+      onClick={props.onClick}
+    >
       <p>{props.nomeBotao}</p>
       <i className="separator"></i>
-      <div className="flechas"></div>
+      <div className={`flechas ${props.flechasOpen ? props.flechasOpen : ''}`}></div>
     </button>
   )
 }
