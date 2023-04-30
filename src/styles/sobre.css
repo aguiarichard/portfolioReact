@@ -8,7 +8,7 @@
 }
 
 .apresentacao {
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     padding: 0 15px;
     color: #fff;
@@ -19,7 +19,7 @@
 }
 
 .small {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .small::after {
