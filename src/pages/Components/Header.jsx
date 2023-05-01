@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className="header">
       <div>
-        <p>Richard de Aguiar</p>
+        <h1>Richard de Aguiar</h1>
         <div id="burger" className="burger" onClick={burgerView}>
           <i></i>
           <i></i>
