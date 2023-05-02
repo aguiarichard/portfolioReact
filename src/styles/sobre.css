@@ -53,11 +53,11 @@
     content: "|";
     margin-left: 8px;
     opacity: 1;
-    animation: anima 1s cubic-bezier(0.68, -0.39, 0.58, 1) infinite;
+    animation: cursor 1s cubic-bezier(0.68, -0.39, 0.58, 1) infinite;
     color: #b3a2ff;
 }
 
-@keyframes anima{
+@keyframes cursor{
     from {opacity: 0%}
     to {opacity: 100%}
  }
