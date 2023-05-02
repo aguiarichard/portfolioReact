@@ -32,10 +32,16 @@ export default function Sobre(props) {
 
       <p className="apresentacao small">
         Ao longo dessa jornada de quase 2 anos estudando programação,
-        desenvolvi alguns projetos que podem ser visto clicando no botão abaixo.
+        desenvolvi alguns projetos que podem ser vistos 
+        {`${props.txtAlternativo ? props.txtAlternativo : ' clicando no botão abaixo'}`}.
       </p>
 
-      <Button nomeBotao="Projetos" flechasOpen="flechas-open" classe="botao-sobre" />
+      {
+        
+          props.button && 
+            <Button nomeBotao="Projetos" flechasOpen="flechas-open" classe="botao-sobre" />
+        
+      }
     </div>
   )
 }
