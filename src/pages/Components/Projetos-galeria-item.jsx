@@ -12,9 +12,9 @@ export default function GaleriaItem(props) {
   const arrayTecnologias = props.tecnologias.split(' ')
 
   function mostrarDescricao(e) {
-    const vidroAtual = e.target.offsetParent.offsetParent
+    const vidroAtual = e.target.offsetParent
     const flechas = e.target.children[2]
-    const button = e.target.offsetParent
+    const button = e.target
 
     flechas.classList.toggle('flechas-open')
 

@@ -42,7 +42,7 @@ export default function Sobre(props) {
 
       {
           props.button && 
-            <Button nomeBotao="Projetos" flechasOpen="flechas-open" classe="botao-sobre" href="projetos"/>
+            <Button nomeBotao="Projetos" flechasOpen="flechas-open" classe="botao-sobre" href="projetos" />
       }
     </div>
   )
