@@ -8,10 +8,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px 7px;
     font-size: 12px;
     font-weight: 600;
     animation: pulse 10s cubic-bezier(0.3, 0.95, 0, 0.97) infinite;
+}
+
+.link-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 2px 7px;
 }
 
 @keyframes pulse {
@@ -50,6 +57,7 @@
     height: 1px;
     background-color: #ffffff;
     transform: rotate(90deg) translateY(-2px);
+    pointer-events: none;
 }
 
 .botao p {

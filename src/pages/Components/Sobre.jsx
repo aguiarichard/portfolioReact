@@ -5,6 +5,10 @@ import "../../styles/sobre.css"
 import Button from "./Button"
 
 export default function Sobre(props) {
+  function linkProjetos() {
+    window.location.href = "https://portfolio-aguiar.netlify.app/projetos"
+  }
+
   return (
     <div className={`container-sobre ${props.classeAll ? props.classeAll : ''}`}>
       <div className="container-skills">
@@ -37,10 +41,8 @@ export default function Sobre(props) {
       </p>
 
       {
-        
           props.button && 
-            <Button nomeBotao="Projetos" flechasOpen="flechas-open" classe="botao-sobre" />
-        
+            <Button nomeBotao="Projetos" flechasOpen="flechas-open" classe="botao-sobre" href="projetos"/>
       }
     </div>
   )
