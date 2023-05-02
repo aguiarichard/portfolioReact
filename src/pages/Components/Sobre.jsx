@@ -4,9 +4,9 @@ import "../../styles/sobre.css"
 
 import Button from "./Button"
 
-export default function Contatos() {
+export default function Sobre(props) {
   return (
-    <div className="container-sobre">
+    <div className={`container-sobre ${props.classeAll ? props.classeAll : ''}`}>
       <div className="container-skills">
         <h2 className="titulo-skills">Habilidades</h2>
         <div className="habilidades">

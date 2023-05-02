@@ -3,14 +3,14 @@
     flex-direction: column;
     position: absolute;
     width: 100vw;
-    height: 100vh;
-    top: 0;
+    height: calc(100vh + 50px);
+    top: -50px;
     justify-content: center;
     align-items: center;
     /* background-color: #202024; */
     background-color: #2a2a2a;
     transform: translateY(-900px);
-    transition: all 1s ease;
+    transition: all 600ms ease;
     z-index: 100;
 
     touch-action: none;
