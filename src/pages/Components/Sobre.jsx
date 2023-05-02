@@ -25,14 +25,14 @@ export default function Contatos() {
       </div>
 
       <p className="apresentacao bold">
-        Olá, meu nome é <span className="richard">Richard de Aguiar</span>,
-        sou desenvolvedor <span className="front-end">Front-end</span> e
+        Olá, meu nome é <span className="richard">Richard de Aguiar</span>.
+        Sou desenvolvedor <span className="front-end">Front-end</span> e
         curso Análise e Desenvolvimento de Sistemas
       </p>
 
       <p className="apresentacao small">
-        Ao longo dessa jornada de quase 2 anos estudando programação
-        desenvolvi alguns projetos que podem ser vistos rolando a tela.
+        Ao longo dessa jornada de quase 2 anos estudando programação,
+        desenvolvi alguns projetos que podem ser visto clicando no botão abaixo.
       </p>
 
       <Button nomeBotao="Projetos" flechasOpen="flechas-open" classe="botao-sobre" />
