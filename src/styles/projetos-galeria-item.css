@@ -101,6 +101,7 @@
 .img-projeto {
     width: 730px;
     height: 460px;
+    object-fit: cover;
 }
 
 @media (max-width: 820px) {

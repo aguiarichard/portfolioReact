@@ -3,7 +3,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    gap: 10px;
     margin-bottom: 30px;
 }
 
@@ -69,4 +68,16 @@
 
 .front-end {
     font-weight: bold;
+}
+
+@media (min-width: 820px) {
+    .container-sobre {
+        margin: 0 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container-sobre {
+        margin: 0 200px;
+    }
 }
