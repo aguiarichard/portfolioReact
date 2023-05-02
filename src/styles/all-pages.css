@@ -7,3 +7,14 @@
     color: #b3a2ff;
     margin-left: 10px;
 }
+
+.all-projetos > div {
+    height: initial;
+    overflow: initial;
+}
+
+.all-projetos > div > div {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 30px;
+}

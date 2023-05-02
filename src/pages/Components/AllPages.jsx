@@ -11,7 +11,7 @@ export default function AllPages() {
             <Sobre classeAll="all-sobre" txtAlternativo=" rolando a tela" />
 
             <h2 className="titulo">Projetos</h2>
-            <Projetos />
+            <Projetos classeAll="all-projetos" />
         </div>
     )
 }

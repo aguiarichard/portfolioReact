@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import '../../styles/projetos.css'
 
 import ProjetosGaleria from "./Projetos-galeria";
@@ -51,11 +51,16 @@ export default class Projetos extends Component {
   render() {
     return (
       <main className="main">
-        <div className="container">
+        <div className={`container ${this.props.classeAll ? this.props.classeAll : ''}`}>
           <ProjetosGaleria />
           
-          <button className="button-projetos-left" onClick={e => this.andarCarrocel(e)}></button>
-          <button className="button-projetos-right" onClick={e => this.andarCarrocel(e)}></button>
+          {
+            this.props.buttons &&
+              <Fragment>
+                <button className="button-projetos-left" onClick={e => this.andarCarrocel(e)}></button>
+                <button className="button-projetos-right" onClick={e => this.andarCarrocel(e)}></button>
+              </Fragment>
+          }
         </div>
       </main>
     )
