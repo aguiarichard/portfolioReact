@@ -1,0 +1,74 @@
+.container-contato {
+    margin-top: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titulo-contato {
+    color: #b3a2ff;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.input, .text-area {
+    margin: 0 30px;
+    background: #2a2a2a;
+    border: none;
+    border-bottom: solid 2px #373737;
+    color: #fff;
+    padding: 3px 20px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-area {
+    height: 80px;
+    resize: none;
+}
+
+.input::placeholder, .text-area::placeholder {
+    color: #575757;
+}
+
+.button {
+    border: none;
+    background: #b3a2ff;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 300ms;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 25px;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.text-contato {
+    padding: 0 15px;
+    margin-bottom: 60px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.link-instagram {
+    font-weight: bold;
+    color: #b3a2ff;
+}
+
+@media (min-width: 820px) {
+    .text-contato {
+        font-size: 16px;
+        text-align: center;
+        margin: 0 200px;
+        margin-bottom: 50px;
+    }
+}

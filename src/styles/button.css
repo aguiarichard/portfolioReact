@@ -18,7 +18,8 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 2px 7px;
+    padding: 5px 7px;
+    width: 100%;
 }
 
 @keyframes pulse {
@@ -48,9 +49,9 @@
 
 .botao-sobre {
     font-size: 18px;
-    padding: 5px 25px;
     border-radius: 5px;
     animation: none;
+    width: 90%;
 }
 
 .separator {
@@ -127,6 +128,6 @@
     }
 
     .botao-sobre {
-        font-size: 16px;
+        font-size: 12px;
     }
 }

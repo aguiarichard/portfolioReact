@@ -19,6 +19,7 @@
 
 @media (max-width: 600px) {
     .footer p {
-        font-size: 12px;
+        font-size: 10px;
+        padding-right: 5px;
     }
 }
