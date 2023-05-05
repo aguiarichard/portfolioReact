@@ -64,6 +64,82 @@
     color: #b3a2ff;
 }
 
+.loading-form {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #2a2a2a;
+
+    /* opacity: 0; */
+    
+    z-index: 70;
+}
+
+@keyframes spin-pulse {
+    0% {
+        -webkit-transform: scale(50%);
+        -webkit-transform: rotate(0deg);
+    }
+
+    25% {
+        -webkit-transform: scale(25%);
+        -webkit-transform: rotate(45deg);
+    }
+
+    50% {
+        -webkit-transform: scale(75%);
+    }
+
+    100% {
+        -webkit-transform: scale(0%);
+    }
+}
+
+.loading-form svg {
+    font-size: 50px;
+    fill: #b3a2ff;
+    
+    margin-bottom: 5px;
+    animation: spin-pulse 1s infinite;
+}
+
+.container-email-sucesso {
+    width: 80%;
+    display: none;
+    align-items: center;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    z-index: 70;
+}
+
+.email-sucesso {
+    background: #00c400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    width: 65%;
+}
+
+.email-sucesso p {
+    font-size: 12px;
+}
+
+.email-sucesso button {
+    background-color: #00c400;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
 @media (min-width: 820px) {
     .text-contato {
         font-size: 16px;
