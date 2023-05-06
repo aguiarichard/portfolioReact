@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailJs from "@emailjs/browser"
+import EmailSucessoFalha from "./email-sucesso-falha";
 
 import { BiLoaderAlt } from "react-icons/bi"
 
@@ -10,6 +11,7 @@ export default function Contatos() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [isSuccesOrFailed, setIsSuccesOrFailed] = useState(false)
 
   function sendEmail(e) {
     e.preventDefault()
@@ -26,31 +28,29 @@ export default function Contatos() {
     }
 
     const loadingForm = document.querySelector('#loading')
-    const mensagem = document.querySelector('#email-sucesso')
-
+    const mensagem = document.querySelector('#email-sucesso-falha')
+    
     loadingForm.style.display = "flex"
-
+  
     emailJs.send("service_8tcly26", "template_o2tuijk", templateParams, "ZLP0GKKzyoem4ICXP")
-      .then(response => {
-        console.log("EMAIL ENVIADO", response.status, response.text)
+    .then(response => {
+      console.log("EMAIL ENVIADO", response.status, response.text)
         setName('')
         setEmail('')
         setMessage('')
 
         loadingForm.style.display = "none"
         mensagem.style.display = "flex"
+        setIsSuccesOrFailed(true)
 
 
       }, error => {
         console.log("ERRO", error)
+
+        loadingForm.style.display = "none"
+        mensagem.style.display = "flex"
+        setIsSuccesOrFailed(false)
       })
-
-    }
-
-    function removerBotao() {
-      const mensagem = document.querySelector('#email-sucesso')
-
-      mensagem.style.display = "none"
     }
     
   return (
@@ -96,14 +96,10 @@ export default function Contatos() {
         <p>Enviando e-mail...</p>
       </div>
 
-
-      <div className="container-email-sucesso" id="email-sucesso">
-        <div className="email-sucesso">
-          <p>Email enviado com sucesso!</p>
-
-          <button onClick={() => removerBotao()}>X</button>
-        </div>
-      </div>
+      {
+        isSuccesOrFailed ? <EmailSucessoFalha status="email-sucesso" txtStatus="Email enviado com sucesso!"/>
+          : <EmailSucessoFalha status="email-falha" txtStatus="Ops.. tente novamente mais tarde."/>
+      }
     </div>
   )
 }
