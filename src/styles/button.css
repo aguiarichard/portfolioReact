@@ -10,7 +10,7 @@
     align-items: center;
     font-size: 12px;
     font-weight: 600;
-    animation: pulse 5s cubic-bezier(0.3, 0.95, 0, 0.97) infinite;
+    animation: pulseBackground 2s ease-in-out infinite;
 }
 
 .link-button {
@@ -22,21 +22,17 @@
     width: 100%;
 }
 
-@keyframes pulse {
+@keyframes pulseBackground {
     0% {
-        -webkit-transform: scale(1);
-    }
-
-    25% {
-        -webkit-transform: scale(1.1);
+        background-color: #b3a2ff;
     }
 
     50% {
-        -webkit-transform: scale(1);
+        background-color: #c1b3ff;
     }
 
     100% {
-        -webkit-transform: scale(1);
+        background-color: #b3a2ff;
     }
 }
 
