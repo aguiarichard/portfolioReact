@@ -10,7 +10,7 @@
     align-items: center;
     font-size: 12px;
     font-weight: 600;
-    animation: pulse 10s cubic-bezier(0.3, 0.95, 0, 0.97) infinite;
+    animation: pulse 5s cubic-bezier(0.3, 0.95, 0, 0.97) infinite;
 }
 
 .link-button {
