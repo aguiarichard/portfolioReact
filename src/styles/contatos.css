@@ -112,7 +112,11 @@
     .text-contato {
         font-size: 16px;
         text-align: center;
-        margin: 0 200px;
+        margin: 0 50px;
         margin-bottom: 50px;
+    }
+
+    .container-contato {
+        margin: 20px 130px 0;
     }
 }
