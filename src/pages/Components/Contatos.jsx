@@ -83,8 +83,8 @@ export default function Contatos() {
 
       <p className="text-contato">
         Você também pode entrar em contato comigo pelas
-        redes sociais que estão sempre no canto inferior
-        esquerdo da página, se preferir um contato mais pessoal,
+        redes sociais, que estão sempre no canto inferior
+        esquerdo da página. Se preferir um contato mais pessoal,
         pode acessar o meu <a className="link-instagram"
           href="https://www.instagram.com/aguiarichard_/" target="_blank">Instagram
         </a>.
