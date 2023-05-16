@@ -44,7 +44,7 @@ export default function GaleriaItem(props) {
           <div className="container-tecnologias-utilizadas">
             {
               arrayTecnologias.map(tecnologia => {
-                return <p className="itens-tecnologias" >{tecnologia}</p>
+                return <p key={tecnologia} className="itens-tecnologias" >{tecnologia}</p>
               })
             }
 
