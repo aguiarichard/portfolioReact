@@ -11,7 +11,7 @@ export default function Header() {
     const nav = document.querySelector('#nav')
 
     if (nav.style.transform == 'translateY(0px)') {
-      nav.style.transform = 'translateY(-900px)'
+      nav.style.transform = 'translateY(-1000px)'
       return
     }
     

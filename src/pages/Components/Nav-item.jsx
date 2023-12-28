@@ -8,7 +8,7 @@ export default function NavItem(props) {
         
         burger.classList.toggle('burger-open')
     
-        nav.style.transform = 'translateY(-900px)'
+        nav.style.transform = 'translateY(-1000px)'
       }
 
     return (        
