@@ -13,8 +13,13 @@ export default function Sobre(props) {
 
   return (
     <div className={`container-sobre ${props.classeAll ? props.classeAll : ''}`}>
+      <p className="apresentacao bold">
+        Olá, meu nome é <span className="richard">Richard de Aguiar</span>.
+        Sou desenvolvedor <span className="front-end">Front-end</span> e
+        curso Análise e Desenvolvimento de Sistemas
+      </p>
+
       <div className="container-skills">
-        <h2 className="titulo-skills">Habilidades</h2>
         <div className="habilidades">
           <div className="habilidade-item">HTML</div>
           <div className="habilidade-item">CSS</div>
@@ -30,11 +35,6 @@ export default function Sobre(props) {
         </div>
       </div>
 
-      <p className="apresentacao bold">
-        Olá, meu nome é <span className="richard">Richard de Aguiar</span>.
-        Sou desenvolvedor <span className="front-end">Front-end</span> e
-        curso Análise e Desenvolvimento de Sistemas
-      </p>
 
       <h2 className="titulo titulo-certificado">Certificações</h2> 
       <Certificado
