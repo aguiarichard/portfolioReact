@@ -1,10 +1,7 @@
-.all-sobre {
-    height: 500px;
-}
-
 .titulo {
     color: #b3a2ff;
     margin-left: 10px;
+    align-self: flex-start;
 }
 
 .all-projetos > div {
@@ -16,10 +13,6 @@
     .titulo {
         margin-left: 50px;
         margin-bottom: 30px
-    }
-
-    .all-sobre {
-        height: 630px;
     }
 
     .all-projetos > div > div {

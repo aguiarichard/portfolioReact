@@ -1,0 +1,26 @@
+.img-certificado {
+    max-width: 1000px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.div-certificado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-certificado {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (min-width: 820px) {
+    .titulo-certificado {
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+}

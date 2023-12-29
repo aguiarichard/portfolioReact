@@ -1,4 +1,6 @@
 import React from "react";
+import Certificado from "./Certificado";
+import imgCertificadoCrescer from "../../assets/imgs/cwi-certificado.png"
 
 import "../../styles/sobre.css"
 
@@ -33,6 +35,13 @@ export default function Sobre(props) {
         Sou desenvolvedor <span className="front-end">Front-end</span> e
         curso Análise e Desenvolvimento de Sistemas
       </p>
+
+      <h2 className="titulo titulo-certificado">Certificações</h2> 
+      <Certificado
+        src={imgCertificadoCrescer}
+        alt="Imagem de certificado CWI"
+        titulo="CWI Software"
+      />
 
       <p className="apresentacao small">
         Ao longo dessa jornada de quase 2 anos estudando programação,
