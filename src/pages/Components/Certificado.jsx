@@ -6,7 +6,6 @@ import '../../styles/certificado.css'
 export default function Certificacoes(props) {
     return (
         <div className="div-certificado">
-          <p className="p-certificado">{props.titulo}</p>
           <img className="img-certificado" src={props.src} alt={props.alt} /> 
         </div> 
     )

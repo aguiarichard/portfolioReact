@@ -40,7 +40,6 @@ export default function Sobre(props) {
       <Certificado
         src={imgCertificadoCrescer}
         alt="Imagem de certificado CWI"
-        titulo="CWI Software"
       />
 
       <p className="apresentacao small">
