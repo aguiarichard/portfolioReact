@@ -7,6 +7,13 @@
 .all-projetos > div {
     height: initial;
     overflow: initial;
+    max-width: initial;
+}
+
+.all-projetos > div > div {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 820px) {

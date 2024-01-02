@@ -1,4 +1,5 @@
 .galeria-bloco {
+    max-width: 730px;
     width: 100%;
     overflow: hidden;
     /* height: 530px; */
@@ -11,20 +12,20 @@
     transition: transform 1s;
     position: relative;
     gap: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 
 @media (max-width: 820px) {
     .galeria-bloco {
-        height: initial;
+        width: initial;
         overflow: initial;
+        max-width: initial;
     }
 
     .galeria {
         gap: 10px;
-
         margin-bottom: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
