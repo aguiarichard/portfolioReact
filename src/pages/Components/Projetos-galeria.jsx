@@ -4,6 +4,7 @@ import GaleriaItem from "./Projetos-galeria-item";
 import imgFlappyBird from "../../assets/imgs/flappy.png"
 import imgPixelArt from "../../assets/imgs/pixel-art.png"
 import imgCalculadora from "../../assets/imgs/calculadora.png"
+import imgLoremIpsun from "../../assets/imgs/lorem-ipsun.png"
 
 import "../../styles/projetos-galeria.css"
 
@@ -38,6 +39,15 @@ export default function ProjetosGaleria() {
           tecnologias="HTML CSS Javascript"
           link="Calculadora JS"
           descricao="Calculadora inspirada no modelo IOS, feita com JS e desenvolvida com todas as funcionalidades da original."
+        />
+        <GaleriaItem
+          href="https://lorem-ipsum-aguiar.netlify.app/"
+          hrefGitHub="https://github.com/aguiarichard/lorem-ipsum"
+          src={imgLoremIpsun}
+          alt="Projeto Lorem ipsun"
+          tecnologias="HTML CSS"
+          link="Lorem ipsun"
+          descricao="Site e-commerce com HTML e CSS."
         />
       </div>
     </div>
