@@ -6,13 +6,11 @@
     height: calc(100vh + 50px);
     top: -50px;
     justify-content: center;
-    align-items: center;
     /* background-color: #202024; */
     background-color: #2a2a2a;
     transform: translateY(-1000px);
     transition: all 600ms ease;
     z-index: 100;
-
     touch-action: none;
 }
 
@@ -22,19 +20,26 @@
     color: #e1e1e6;
     width: 100%;
     text-align: center;
-    padding: 20px;
-    margin: 20px 0;
-    letter-spacing: 20px;
+    margin-left: 100px;
+    letter-spacing: 10px;
     font-weight: bold;
     /* background-color: #222226; */
-    background-color: #2f2f2f;
+    /* background-color: #2f2f2f; */
     height: 90px;
-    transition: all 0.1s;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
 }
 
 @media (min-width: 600px) {
     .nav a:hover {
-        font-size: 34px;
         letter-spacing: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav a {
+        margin-left: 25px;
     }
 }
