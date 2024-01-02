@@ -56,7 +56,9 @@ export default function GaleriaItem(props) {
             </p>
           </div>
         </div>
-        <img id="projeto" className="img-projeto" src={props.src} alt={props.alt} />
+        <a href={props.href} target="_blank" className="link-img-projeto">
+          <img id="projeto" className="img-projeto" src={props.src} alt={props.alt} />
+        </a>
       </div>
       <div className={`container-link ${props.deslocar ? props.deslocar : ''}`}>
         <div className="item-link">
