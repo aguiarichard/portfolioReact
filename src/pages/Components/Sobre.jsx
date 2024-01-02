@@ -35,8 +35,6 @@ export default function Sobre(props) {
         </div>
       </div>
 
-
-      <h2 className="titulo titulo-certificado">Certificações</h2> 
       <Certificado
         src={imgCertificadoCrescer}
         alt="Imagem de certificado CWI"
