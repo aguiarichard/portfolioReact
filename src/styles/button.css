@@ -10,7 +10,6 @@
     align-items: center;
     font-size: 12px;
     font-weight: 600;
-    animation: pulseBackground 2s ease-in-out infinite;
 }
 
 .link-button {
@@ -20,20 +19,6 @@
     text-decoration: none;
     padding: 5px 7px;
     width: 100%;
-}
-
-@keyframes pulseBackground {
-    0% {
-        background-color: #b3a2ff;
-    }
-
-    50% {
-        background-color: #c1b3ff;
-    }
-
-    100% {
-        background-color: #b3a2ff;
-    }
 }
 
 .botao-projetos {
