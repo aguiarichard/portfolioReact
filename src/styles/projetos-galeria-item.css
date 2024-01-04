@@ -107,6 +107,11 @@
 
 .link-img-projeto {
     height: 460px;
+    transition: 1s ease;
+}
+
+.link-img-projeto:hover {
+    transform: scale(1.04);
 }
 
 @media (max-width: 820px) {
