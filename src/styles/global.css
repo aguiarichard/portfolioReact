@@ -9,7 +9,7 @@ body {
     background-color: #2a2a2a;
     color: #e1e1e6;
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
+    position: relative;
 }
 
 #root {
