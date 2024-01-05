@@ -4,7 +4,7 @@ import "../../styles/all-pages.css"
 import '../../styles/certificado.css'
 
 export default function Certificacoes(props) {
-    const [lupaStyle, setLupaStyle] = useState({ backgroundImage: 'url(../../src/assets/imgs/cwi-certificado.png)' }) 
+    const [lupaStyle, setLupaStyle] = useState({ backgroundImage: `url(${ props.src })` }) 
 
     const handleMouseMove = (e) => {
       const { offsetX, offsetY, target } = e.nativeEvent
@@ -25,7 +25,7 @@ export default function Certificacoes(props) {
       console.log(offsetX, offsetY, offsetWidth, offsetHeight);
     }
 
-    const handleMouseLeave = (e) => {
+    const handleMouseLeave = () => {
       setLupaStyle((prev) => ({ ...prev, display: `none` }))
     }
 
