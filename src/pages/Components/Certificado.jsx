@@ -16,8 +16,8 @@ export default function Certificacoes(props) {
       setLupaStyle((prev) => ({
         ...prev, 
         display: `block`,
-        top: `${offsetY - 100}px`,
-        left:`${offsetX - 50}px`,
+        top: `${offsetY - 75}px`,
+        left:`${offsetX - 75}px`,
         backgroundPosition: `${xPercentage}% ${yPercentage}%`
       
       }))
