@@ -32,6 +32,7 @@ export default function Sobre(props) {
           <div className="habilidade-item">JUnit</div>
           <div className="habilidade-item">Jest</div>
           <div className="habilidade-item">Git</div>
+          <div className="habilidade-item">PostgreSQL</div>
         </div>
       </div>
 
