@@ -1,6 +1,6 @@
 .img-certificado {
-    max-width: 1111px;
-    width: 90%;
+    max-width: 1000px;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -24,6 +24,10 @@
     .titulo-certificado {
         margin-left: 10px;
         margin-bottom: 0px;
+    }
+
+    .img-certificado {
+        width: 90%;
     }
 }
 
