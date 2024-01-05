@@ -29,12 +29,12 @@ export default function Contatos() {
 
     const loadingForm = document.querySelector('#loading')
     const mensagem = document.querySelector('#email-sucesso-falha')
-    
+
     loadingForm.style.display = "flex"
-  
+
     emailJs.send("service_8tcly26", "template_o2tuijk", templateParams, "ZLP0GKKzyoem4ICXP")
-    .then(response => {
-      console.log("EMAIL ENVIADO", response.status, response.text)
+      .then(response => {
+        console.log("EMAIL ENVIADO", response.status, response.text)
         setName('')
         setEmail('')
         setMessage('')
@@ -51,33 +51,48 @@ export default function Contatos() {
         mensagem.style.display = "flex"
         setIsSuccesOrFailed(false)
       })
-    }
-    
+  }
+
   return (
     <div className="container-contato">
       <h2 className="titulo-contato">Entre em contato</h2>
       <form className="form" onSubmit={sendEmail}>
 
-        <input
-          className="input"
-          type="text"
-          placeholder="Digite seu nome"
-          onChange={e => setName(e.target.value)}
-          value={name}
-        />
-        <input
-          className="input"
-          type="text"
-          placeholder="Digite seu email"
-          onChange={e => setEmail(e.target.value)}
-          value={email}
-        />
-        <textarea
-          className="text-area"
-          placeholder="Digite sua mensagem"
-          onChange={e => setMessage(e.target.value)}
-          value={message}
-        />
+        <div className="container-input">
+          <label className="label" htmlFor="nome">Nome</label>
+          <input
+            id="nome"
+            className="input"
+            type="text"
+            placeholder="Digite seu nome"
+            onChange={e => setName(e.target.value)}
+            value={name}
+          />
+        </div>
+
+        <div className="container-input">
+          <label htmlFor="email" className="label">Email</label>
+          <input
+            id="email"
+            className="input"
+            type="text"
+            placeholder="Digite seu email"
+            onChange={e => setEmail(e.target.value)}
+            value={email}
+          />
+        </div>
+
+        <div className="container-input">
+          <label htmlFor="mensagem" className="label">Mensagem</label>
+          <textarea
+            id="mensagem"
+            className="text-area"
+            placeholder="Digite sua mensagem"
+            onChange={e => setMessage(e.target.value)}
+            value={message}
+          />
+        </div>
+
         <input className="button" type="submit" value="Enviar" />
       </form>
 
@@ -97,8 +112,8 @@ export default function Contatos() {
       </div>
 
       {
-        isSuccesOrFailed ? <EmailSucessoFalha status="email-sucesso" txtStatus="Email enviado com sucesso!"/>
-          : <EmailSucessoFalha status="email-falha" txtStatus="Ops.. tente novamente mais tarde."/>
+        isSuccesOrFailed ? <EmailSucessoFalha status="email-sucesso" txtStatus="Email enviado com sucesso!" />
+          : <EmailSucessoFalha status="email-falha" txtStatus="Ops.. tente novamente mais tarde." />
       }
     </div>
   )
