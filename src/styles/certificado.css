@@ -1,5 +1,5 @@
 .img-certificado {
-    max-width: 1111px;
+    max-width: 1000px;
     width: 90%;
     border-radius: 5px;
 }
@@ -25,15 +25,19 @@
         margin-left: 10px;
         margin-bottom: 0px;
     }
+
+    .img-certificado {
+        width: 100%;
+    }
 }
 
 .lupa {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     border-radius: 50%;
     border: solid 2px #464646;
-    background-size: 700%;
+    background-size: 800%;
     background-position: center;
     pointer-events: none;
     display: none;
