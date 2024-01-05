@@ -3,8 +3,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    margin: 30px 0;
-    gap: 35px;
+    height: calc(100vh - 80px);
 }
 
 .container-skills {
@@ -69,12 +68,12 @@
 
 @media (min-width: 820px) {
     .container-sobre {
-        margin: 30px 50px;
+        margin: 0px 50px;
     }
 }
 
 @media (min-width: 1000px) {
     .container-sobre {
-        margin: 30px 200px;
+        margin: 0px 200px;
     }
 }
