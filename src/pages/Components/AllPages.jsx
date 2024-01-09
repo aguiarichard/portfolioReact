@@ -10,7 +10,7 @@ export default function AllPages() {
     return (
         <main>
             <Sobre classeAll="all-sobre" txtAlternativo=" rolando a tela" />
-            <Projetos classeAll="all-projetos" />
+            <Projetos classeAll="all-projetos" onTitulo="on-titulo"/>
             <Contatos />
         </main>
     )

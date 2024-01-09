@@ -8,10 +8,10 @@ import imgLoremIpsun from "../../assets/imgs/lorem-ipsun.png"
 
 import "../../styles/projetos-galeria.css"
 
-export default function ProjetosGaleria() {
+export default function ProjetosGaleria(props) {
   return (
     <div className="galeria-bloco">
-      <h2 className="titulo">Projetos</h2>
+      <h2 className={`${ props.onTitulo ? props.onTitulo : 'off-titulo' } titulo`}>Projetos</h2>
       <div className="galeria" id="galeria">
         <GaleriaItem
           href="https://flappy-cat-aguiar-js.netlify.app/"

@@ -7,6 +7,14 @@
     /* border-radius: 10px; */
 }
 
+.on-titulo {
+    display: block;
+}
+
+.off-titulo {
+    display: none;
+}
+
 .galeria {
     display: flex;
     transition: transform 1s;

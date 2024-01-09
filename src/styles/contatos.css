@@ -1,17 +1,19 @@
 .container-contato {
-    margin-top: 20px;
+    height: calc(100vh - 130px);
 }
 
 .form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 50px;
 }
 
 .titulo-contato {
     color: #fff;
     margin-left: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    padding-top: 20px;
 }
 
 .container-input {
@@ -94,7 +96,6 @@
     padding: 5px 25px;
     border-radius: 5px;
     color: #fff;
-    margin-bottom: 50px;
 }
 
 .text-contato {
@@ -158,11 +159,10 @@
     .text-contato {
         font-size: 16px;
         text-align: center;
-        margin: 0 50px;
         margin-bottom: 50px;
     }
 
     .container-contato {
-        margin: 20px 130px 0;
+        margin: 0px 130px 0;
     }
 }
