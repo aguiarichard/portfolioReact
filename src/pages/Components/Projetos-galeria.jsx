@@ -11,6 +11,7 @@ import "../../styles/projetos-galeria.css"
 export default function ProjetosGaleria() {
   return (
     <div className="galeria-bloco">
+      <h2 className="titulo">Projetos</h2>
       <div className="galeria" id="galeria">
         <GaleriaItem
           href="https://flappy-cat-aguiar-js.netlify.app/"

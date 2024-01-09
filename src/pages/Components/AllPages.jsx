@@ -8,12 +8,10 @@ import Contatos from "./Contatos";
 
 export default function AllPages() {
     return (
-        <div>
+        <main>
             <Sobre classeAll="all-sobre" txtAlternativo=" rolando a tela" />
-
-            <h2 className="titulo">Projetos</h2>
             <Projetos classeAll="all-projetos" />
             <Contatos />
-        </div>
+        </main>
     )
 }

@@ -54,7 +54,7 @@ export default function Contatos() {
   }
 
   return (
-    <div className="container-contato">
+    <section className="container-contato section">
       <h2 className="titulo-contato">Entre em contato</h2>
       <form className="form" onSubmit={sendEmail}>
 
@@ -115,6 +115,6 @@ export default function Contatos() {
         isSuccesOrFailed ? <EmailSucessoFalha status="email-sucesso" txtStatus="Email enviado com sucesso!" />
           : <EmailSucessoFalha status="email-falha" txtStatus="Ops.. tente novamente mais tarde." />
       }
-    </div>
+    </section>
   )
 }

@@ -50,19 +50,17 @@ export default class Projetos extends Component {
 
   render() {
     return (
-      <main className="main">
-        <div className={`container ${this.props.classeAll ? this.props.classeAll : ''}`}>
-          <ProjetosGaleria />
+      <section className={`container ${this.props.classeAll ? this.props.classeAll : ''} section`}>
+        <ProjetosGaleria />
 
-          {
-            this.props.buttons &&
-            <Fragment>
-              <button className="button-projetos-left" onClick={e => this.andarCarrocel(e)}></button>
-              <button className="button-projetos-right" onClick={e => this.andarCarrocel(e)}></button>
-            </Fragment>
-          }
-        </div>
-      </main>
+        {
+          this.props.buttons &&
+          <Fragment>
+            <button className="button-projetos-left" onClick={e => this.andarCarrocel(e)}></button>
+            <button className="button-projetos-right" onClick={e => this.andarCarrocel(e)}></button>
+          </Fragment>
+        }
+      </section>
     )
   }
 }
