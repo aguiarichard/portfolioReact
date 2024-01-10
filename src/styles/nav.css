@@ -32,6 +32,10 @@
     max-width: 500px;
 }
 
+.nav a.actived {
+    color: #b3a2ff;
+}
+
 @media (max-width: 600px) {
     .nav a {
         margin-left: 25px;

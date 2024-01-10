@@ -50,7 +50,7 @@ export default class Projetos extends Component {
 
   render() {
     return (
-      <section className={`container ${this.props.classeAll ? this.props.classeAll : ''} section`}>
+      <section id="projetos" className={`container ${this.props.classeAll ? this.props.classeAll : ''} section`}>
         <ProjetosGaleria onTitulo={ this.props.onTitulo ? this.props.onTitulo : '' }/>
 
         {

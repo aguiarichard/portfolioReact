@@ -19,29 +19,21 @@ export default function Header() {
     nav.style.transform = 'translateY(0)'
   }
 
-  function carregamento(e) {
-    const body = document.querySelector('body')
-    const div = document.querySelector('.carregamento')
+  function goInitial() {
+    const sectionSobre = document.querySelector("#sobre")
+    const topSection = sectionSobre ? sectionSobre.offsetTop -80 : false
 
-    body.appendChild(div)
-
-    div.style.transform = `translateX(${div.offsetWidth - 200}px)`
-
-    setTimeout(() => {
-      div.style.transform = `translateX(0)`
-
-    }, 800)
-
-    console.log(body, div.offsetWidth, e);
+    window.scroll({
+      top: topSection
+    })
   }
 
   return (
     <header className="header">
       <div>
-        <Link to={`/`} onClick={carregamento}>
+        <Link to={`/`} onClick={goInitial}>
           <h1>Richard de Aguiar</h1>
         </Link>
-        <div className="carregamento"></div>
         <div id="burger" className="burger" onClick={burgerView}>
           <i></i>
           <i></i>

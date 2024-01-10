@@ -128,15 +128,3 @@
 .header div a {
     text-decoration: none;
 }
-
-.carregamento {
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    transition: 0.8s ease;
-    width: calc(100% + 1000px);
-    height: 100%;
-    z-index: 1000000000;
-    top: 0px;
-    left: calc(-100% - 1000px);
-    background-color: #2a2a2a;
-}

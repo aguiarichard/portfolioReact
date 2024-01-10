@@ -54,7 +54,7 @@ export default function Contatos() {
   }
 
   return (
-    <section className="container-contato section">
+    <section id="contatos" className="container-contato section">
       <h2 className="titulo-contato">Entre em contato</h2>
       <form className="form" onSubmit={sendEmail}>
 

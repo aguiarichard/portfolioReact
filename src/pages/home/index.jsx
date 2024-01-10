@@ -11,13 +11,15 @@ import "../../styles/home.css"
 function Home() {
   return (
     <BrowserRouter>
-      <div className="grid">
-        <Header />
-        <Routes />
-        <Footer />
-        
-        <RedesSociais />
-      </div>
+      <React.StrictMode>
+        <div className="grid">
+          <Header />
+          <Routes />
+          <Footer />
+
+          <RedesSociais />
+        </div>
+      </React.StrictMode>
     </BrowserRouter>
   )
 }

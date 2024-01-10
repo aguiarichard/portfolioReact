@@ -21,15 +21,12 @@ export default function Certificacoes(props) {
         backgroundPosition: `${xPercentage}% ${yPercentage}%`
       
       }))
-
-      console.log(offsetX, offsetY, offsetWidth, offsetHeight);
     }
 
     const handleMouseLeave = () => {
       setLupaStyle((prev) => ({ ...prev, display: `none` }))
     }
-
-    console.log(lupaStyle, props.src);
+    
     return (
         <div className="div-certificado">
           <img className="img-certificado" src={props.src} alt={props.alt} draggable={false} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}/>

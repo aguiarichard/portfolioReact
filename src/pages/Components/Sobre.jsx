@@ -12,7 +12,7 @@ export default function Sobre(props) {
   }
 
   return (
-      <section className={`container-sobre ${props.classeAll ? props.classeAll : ''} section`}>
+      <section id="sobre" className={`container-sobre ${props.classeAll ? props.classeAll : ''} section`}>
         <p className="apresentacao bold">
           Olá, meu nome é <span className="richard">Richard de Aguiar</span>.
           Sou desenvolvedor <span className="front-end">Front-end</span> e
