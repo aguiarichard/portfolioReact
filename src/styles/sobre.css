@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0px 10px;
     gap: 10px;
 }
 
@@ -33,7 +32,6 @@
 .apresentacao {
     font-size: 22px;
     text-align: center;
-    padding: 0 15px;
     color: #fff;
 }
 

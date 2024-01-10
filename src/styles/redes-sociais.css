@@ -20,3 +20,15 @@
     border-radius: 6px;
     background: #ffffff;
 }
+
+@media (min-width: 820px) {
+    .container-redes-sociais {
+        left: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container-redes-sociais {
+        left: 200px;
+    }
+}

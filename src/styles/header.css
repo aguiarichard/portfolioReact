@@ -64,6 +64,25 @@
     }
 }
 
+@media (min-width: 820px) {
+    .burger {
+        margin-right: 40px;
+    }
+    .header div a {
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .burger {
+        margin-right: 190px;
+    }
+
+    .header div a {
+        margin-left: 190px;
+    }
+}
+
 .burger-open i:nth-of-type(2) {
     display: none;
 }

@@ -23,3 +23,15 @@
         padding-right: 5px;
     }
 }
+
+@media (min-width: 820px) {
+    .footer p {
+        margin-right: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .footer p {
+        margin-right: 200px;
+    }
+}
