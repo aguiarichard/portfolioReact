@@ -22,9 +22,9 @@
 }
 
 .burger {
+    display: flex;
     height: 50px;
     padding: 10px;
-    display: flex;
     position: relative;
     flex-direction: column;
     justify-content: space-evenly;
@@ -66,9 +66,9 @@
 
 @media (min-width: 820px) {
     .burger {
-        margin-right: 40px;
+        display: none;
     }
-    .header div a {
+    .header > div > a {
         margin-left: 40px;
     }
 }
@@ -78,7 +78,7 @@
         margin-right: 190px;
     }
 
-    .header div a {
+    .header > div > a {
         margin-left: 190px;
     }
 }

@@ -26,20 +26,46 @@
     /* background-color: #222226; */
     /* background-color: #2f2f2f; */
     height: 90px;
-    transition: all 0.3s;
+    transition: all 0.2s;
     display: flex;
     align-items: center;
     max-width: 500px;
 }
 
-@media (min-width: 600px) {
-    .nav a:hover {
-        letter-spacing: 25px;
-    }
-}
-
 @media (max-width: 600px) {
     .nav a {
         margin-left: 25px;
+    }
+}
+
+@media (min-width: 820px) {
+    .nav {
+        flex-direction: row;
+        position: static;
+        width: initial;
+        height: initial;
+        background-color: initial;
+        transform: initial !important;
+
+        gap: 30px;
+        margin-right: 50px;
+    }
+
+    .nav > a {
+        font-size: 14px;
+        margin: 0;
+        letter-spacing: 2px;
+        height: 30px;
+    }
+
+    .nav > a:hover {
+        color: #b3a2ff;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1000px) {
+    .nav {
+        margin-right: 200px;
     }
 }
