@@ -56,7 +56,7 @@ export default function NavItem(props) {
         <Link 
             to={`/${props.href ? props.href : ''}`} 
             onClick={scrollSection} 
-            className={`${ props.href == '#sobre' ? 'activedd' : '' } js-link`}>
+            className={`${ props.href == '#sobre' ? 'activedd' : '' } js-link teste`}>
 
             {props.name}
         </Link>
