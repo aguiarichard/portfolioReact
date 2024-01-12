@@ -12,8 +12,10 @@ export default function RoutesReact() {
         <Routes>
             <Route path="*" element={<AllPages />} /> 
             <Route path="/" element={<AllPages />} /> 
-            <Route path="/#sobre" element={<AllPages />} /> 
-            <Route path="/projetos" element={<Projetos  buttons="true" />} /> 
+            <Route path="/sobre" element={<AllPages />} /> 
+            <Route path="/projetos" element={<AllPages />} /> 
+            <Route path="/contatos" element={<AllPages />} /> 
+            <Route path="/carousel" element={<Projetos  buttons="true" />} /> 
         </Routes>
     )
 }
